@@ -9,16 +9,13 @@ namespace HerencaPolemorfismoExFx
     {
         static void Main(string[] args)
         {
-            //criando uma lista
             List<Employee> list = new List<Employee>();
 
             Console.Write("Enter the number of employees: ");
             int n = int.Parse(Console.ReadLine());
 
-            //fazendo um loop
             for (int i = 0; i < n; i++)
             {
-                //perguntando sobre os funcionarios
                 Console.WriteLine($"Employee {i+1} data:"); //usando interploração
                 Console.Write("Outsourced (y/n)? ");
                 char ch = char.Parse(Console.ReadLine());
